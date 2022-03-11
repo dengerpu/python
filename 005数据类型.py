@@ -1,0 +1,35 @@
+#整形变量:  python 不区分长整型和整形
+a=0.0000000000000025
+print(a)
+a=25e10
+print(a)   # e10相当于10的10次方
+#int()整形
+#str()字符
+#float()浮点数
+#浮点数转化为整数，直接去掉小数点
+print('1.浮点数转化为整型数，小数点直接去掉：')
+a=5.99
+c=int(a)
+print('5.99=',c)
+print('2.字符可以直接转化为整数')
+a='520'
+c=int(a)
+print('520=',c)
+print('3.浮点数，字符转化为浮点数加小数点')
+a='520'
+b=float(a)
+print('a=',a)
+print('4.其他转化为字符，加引号')
+a=50
+c=str(a)
+print(c)
+c=str(5e19)
+print(c)
+print('5.type函数可以确定函数类型,isinstance()可以确定两个参数类型是否一致')
+a=3
+print(type(a))
+b=3.55
+print(type(b))
+c='aa'
+print(type(c))
+print(isinstance(c,str))
